@@ -1,2 +1,5 @@
 # patnebe.github.io
-Personal website
+Personal website built using Jekyll
+
+## Local Development
+`bundle exec jekyll serve`
