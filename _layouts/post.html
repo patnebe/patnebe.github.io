@@ -2,8 +2,7 @@
 layout: default
 ---
 <div>
-    <span><h2>{{ page.title }}</h2></span>
-    <span>{{ page.date | date_to_string }}</span>
+    <span><h2>{{ page.title }}</h2></span> <span style="font-style: italic;">{{ page.date | date_to_string }}</span>
 </div>
 
 {{ content }}
