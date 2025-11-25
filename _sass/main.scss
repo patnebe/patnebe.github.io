@@ -1,3 +1,14 @@
 .current {
   color: green;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+  margin: 15px 10px;
+}
+
+main {
+  flex: 1;
+}
