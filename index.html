@@ -3,14 +3,27 @@ layout: default
 title: Home
 ---
 <body>
-    <h1>Welcome!</h1>
+    <h2>Okwudili Pat-Nebe</h2>
 
-    <ul>
-        {% for post in site.posts %}
-            <li>
-            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-            {{ post.excerpt }}
-            </li>
-        {% endfor %}
-    </ul>
+    <div>
+        <div>
+            <h3>Posts</h3>
+        
+            <ul style="padding-left: 0;">
+                {% for post in site.posts %}
+                <li style="list-style: none; padding-left: 0;">
+                    <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                    <span>{{ post.excerpt }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div style="padding-top: 20px;">
+            <h3>Projects</h3>
+            <ul>
+                <li>x86 Debugger - <a href="https://github.com/patnebe/sdb" target="_blank">Github</a></li>
+            </ul>
+        </div>
+    </div>
+    
 </body>
